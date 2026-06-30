@@ -53,14 +53,13 @@ catalog:
   publint: 0.3.21
   sass: 1.101.0
   tailwindcss: 4.3.1
-  tsdown: 0.22.2
   tsx: 4.22.4
   type-fest: 5.7.0
   typescript: 6.0.3
   valibot: 1.4.1
-  vite: 8.0.16
-  vitest: 4.1.8
-  vite-plus: 0.2.1
+  vite: npm:@voidzero-dev/vite-plus-core@0.0.0-commit.4be8d5190ff1283cef27bcb957cf313891fd1269
+  vitest: 4.1.9
+  vite-plus: 0.0.0-commit.4be8d5190ff1283cef27bcb957cf313891fd1269
   vite-plugin-vue-devtools: 7.7.9
   vue: 3.5.35
   vue-3.4: npm:vue@3.4.38
@@ -87,6 +86,8 @@ minimumReleaseAgeExclude:
   - '@oxlint-tsgolint/*'
   - oxfmt
   - '@oxfmt/*'
+  - vitest
+  - '@vitest/*'
 
 overrides:
   vite: 'catalog:'
