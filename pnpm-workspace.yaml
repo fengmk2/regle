@@ -1,3 +1,24 @@
+minimumReleaseAge: 60
+minimumReleaseAgeExclude:
+  - vite-plus
+  - '@voidzero-dev/*'
+  - '@oxc-project/*'
+  - '@oxlint/*'
+  - '@oxfmt/*'
+  - '@oxlint-tsgolint/*'
+  - '@rolldown/*'
+  - '@tsdown/*'
+  - oxlint
+  - oxfmt
+  - oxlint-tsgolint
+  - tsdown
+  - rolldown
+  - '@oxlint*'
+  - 'oxfmt*'
+  - '@oxfmt*'
+  - '@typescript/native-preview*'
+  - vitest
+  - '@vitest/*'
 packages:
   - packages/core
   - packages/rules
@@ -53,14 +74,13 @@ catalog:
   publint: 0.3.21
   sass: 1.101.0
   tailwindcss: 4.3.1
-  tsdown: 0.22.2
   tsx: 4.22.4
   type-fest: 5.7.0
   typescript: 6.0.3
   valibot: 1.4.1
-  vite: 8.0.16
-  vitest: 4.1.8
-  vite-plus: 0.2.1
+  vite: npm:@voidzero-dev/vite-plus-core@0.0.0-commit.1d7ba811f0e456640b0e761e8e8acf77d1ad3251
+  vitest: 4.1.9
+  vite-plus: 0.0.0-commit.1d7ba811f0e456640b0e761e8e8acf77d1ad3251
   vite-plugin-vue-devtools: 7.7.9
   vue: 3.5.35
   vue-3.4: npm:vue@3.4.38
@@ -68,25 +88,12 @@ catalog:
   vue-router: 5.1.0
   vue-tsc: 3.3.5
   zod: 4.4.3
+  '@vitest/coverage-istanbul': 4.1.9
+  '@vitest/coverage-v8': 4.1.9
 
 engineStrict: true
 optimisticRepeatInstall: false
 verifyDepsBeforeRun: false
-minimumReleaseAge: 0
-minimumReleaseAgeExclude:
-  - tsdown
-  - oxlint
-  - '@oxlint*'
-  - oxfmt*
-  - '@oxfmt*'
-  - '@typescript/native-preview*'
-  - vite-plus
-  - '@voidzero-dev/*'
-  - '@oxlint/*'
-  - oxlint-tsgolint
-  - '@oxlint-tsgolint/*'
-  - oxfmt
-  - '@oxfmt/*'
 
 overrides:
   vite: 'catalog:'
